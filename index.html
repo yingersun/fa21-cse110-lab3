@@ -43,8 +43,8 @@
             <a href="https://www.callofduty.com/warzone"><img src="images/call-of-duty-modern-warfare-anime-skin.png_1200x0_.jpg" alt="anime weapon skins described by Joe"></a>
             <br><span><i>Click on the image to visit the "Warzone" web page.</i></span>
         </section>
-        <section>
-            <main>
+        <main>
+            <section>
                 <h2>Revenue Growth Strategies</h2>
                 <p> After releasing in he beginning of Summer, our game VALORANT has grew into a daily playercount of 1+ million players. Although this is incredible growth, we must brainstorm strategies to cotinue growing our game and playerbase.
                 </p>
@@ -58,33 +58,32 @@
                         <li>Release new VALORANT skins.</li>
                     </ul>
                     <form action="#">
-                        <label for="options">Choose a strategy:</label>
+                        <label for="strategies">Choose a strategy:</label>
                         <select name="strategies" id="strategies">
                       <option value="tv_commercials">Pay for TV commercials to promote our game.</option>
                       <option value="ttv_commercials">Pay for Twitch.tv commercials.</option>
                       <option value="release_map">Release a new VALORANT map.</option>
                       <option value="release_agent">Release a new VALORANT agent.</option>
                       <option value="release_skins">Release new VALORANT skins.</option>
-
                     </select>
                         <br><br>
                         <input type="submit" value="Submit">
                     </form>
 
                 </details>
-            </main>
-        </section>
+            </section>
+        </main>
         <section>
             <h2>Design Strategy</h2>
             <h3>GAMEPLAY VIDEO</h3>
             <p>We need to design a new agent that is very powerful. Here is an example of gameplay that we should take as inspiration.</p>
             <video width="640" height="480" controls loop autoplay muted>
-                <source src="videos/naucnj.mp4" tyle="video/mp4"> 
+                <source src="videos/naucnj.mp4" type="video/mp4"> 
             </video>
             <h3>GAMEPLAY AUDIO</h3>
             <p>In addition, we should take inspiration from this song.</p>
             <audio controls>
-                <source src="audio/JNATHYN - Rise [NCS10 Release].mp3" type="audio/mpeg">
+                <source src="audio/JNATHYN_Rise.mp3" type="audio/mpeg">
               </audio>
             <p>Click the play button</p>
             <p><em>Track: JNATHYN - Rise [NCS10 Release]
@@ -117,15 +116,15 @@
 
                     <label for="checkbox">By submitting a comment, you are agreeing to not abuse this feature.</label><br>
                     <span>Check this box to agree.</span>
-                    <input type="checkbox"><br><br>
+                    <input type="checkbox" id="checkbox">
 
-                    <label for="contact">Please select your preferred contact method:</label><br>
+                    <p>Please select your preferred contact method:</p>
                     <input type="radio" id="contactChoice1" name="contact" value="email">
                     <label for="contactChoice1">Email</label>
-                    <input type="radio" id="contactChoice1" name="contact" value="phone">
-                    <label for="contactChoice1">Phone</label>
-                    <input type="radio" id="contactChoice1" name="contact" value="mail">
-                    <label for="contactChoice1">Mail</label><br><br>
+                    <input type="radio" id="contactChoice2" name="contact" value="phone">
+                    <label for="contactChoice2">Phone</label>
+                    <input type="radio" id="contactChoice3" name="contact" value="mail">
+                    <label for="contactChoice3">Mail</label><br><br>
 
                     <input type="submit" value="Submit">
                 </fieldset>
