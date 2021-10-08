@@ -1,0 +1,171 @@
+/* my css sheet */
+
+h3 {
+    color: #3f0000;
+    font-size: 15px;
+    margin: 10px 0 0 10px;
+}
+
+#credit {
+    color: rgb(230, 235, 235);
+    font-size: 15pt;
+    margin: auto;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    width: 50%;
+}
+
+.clickable {
+    color: hsl(0, 46%, 36%);
+    font-size: 200%;
+}
+
+.link {
+    color: blue;
+    display: inline;
+}
+
+* {
+    background: rgba(255, 78, 78, 0.01);
+    font-family: 'Roboto', serif;
+}
+
+img {
+    width: 40vw;
+    height: auto;
+    max-width: 1920px;
+    min-height: 100px;
+    position: static;
+}
+
+form {
+    width: 25rem;
+    padding: 10px 10px 15px 15px;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 10px;
+}
+
+#meetingtopics {
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.list {
+    font-size: .5in;
+}
+
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p {
+    color: #444444;
+}
+
+#addtofav {
+    position: relative;
+    left: 30vw;
+    transition-duration: 0.4s;
+}
+
+#addtofav:active {
+    background-color: yellow;
+    color: white;
+    font-size: 50px
+}
+
+a:hover {
+    color: green;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.grid-item1 {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.grid-item1 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.grid-item1 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.grid-item1 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar li {
+    margin: 10%;
+    width: 50%;
+}
+
+header,
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label[for="strategies"] {
+    font-size: px;
+}
+
+main details {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+details>form {
+    display: inline-block;
+}
+
+h2~h3 {
+    color: green;
+}
+
+option:first-child+option {
+    background-color: green;
+}
+
+p.clickable {
+    text-decoration: underline;
+}

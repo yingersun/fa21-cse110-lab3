@@ -7,30 +7,39 @@
     </title>
     <meta charset="UTF-8">
     <meta name="description" content="Meeting Minutes">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
     <link rel="shortcut icon" type="image/png" href="./images/apple-icon-precomposed.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="container">
         <section>
             <header>
-                <h1>VALORANT Meeting Minutes</h1>
+                <h1 style="color: red">VALORANT Meeting Minutes</h1>
+                <style>
+                    h2 {
+                        color: #8b0000;
+                    }
+                </style>
                 <h2>October 1, 2021</h2>
                 <nav>
-                    <ul>
+                    <ul id="navbar">
                         <li>Overview</li>
                         <li>Important Dates</li>
                         <li>Documentation</li>
                     </ul>
                 </nav>
-                <button>Add to favorites</button>
+                <button id="addtofav">Add to favorites</button>
             </header>
         </section>
         <hr>
         <section>
             <h2>Meeting Agenda</h2>
-            <p>In this meeting, we will discuss the <span><b>following topics:</b></span></p>
-            <ol>
+            <p id="meetingtopics">In this meeting, we will discuss the <span><b>following topics:</b></span></p>
+            <ol class="list">
                 <li>Revenue Growth Strategies</li>
                 <li>Design Strategy</li>
                 <li><strong>New Battlepass Ideas</strong></li>
@@ -41,37 +50,51 @@
             <p>During this meeting, Joe brought up the idea of adding Anime battlepass skins. He says he plays <em>Warzone</em> and had a lot of fun using his pink anime girl weapon skins.<br>The staff was disturbed by this idea and the Creative Director
                 asked Joe to immediately leave the meeting room.</p>
             <a href="https://www.callofduty.com/warzone"><img src="images/call-of-duty-modern-warfare-anime-skin.png_1200x0_.jpg" alt="anime weapon skins described by Joe"></a>
-            <br><span><i>Click on the image to visit the "Warzone" web page.</i></span>
+            <br><span class="link"><i>Click on the image to visit the "Warzone" web page.</i></span>
         </section>
         <main>
-            <section>
-                <h2>Revenue Growth Strategies</h2>
-                <p> After releasing in he beginning of Summer, our game VALORANT has grew into a daily playercount of 1+ million players. Although this is incredible growth, we must brainstorm strategies to cotinue growing our game and playerbase.
+            <h2 style="text-align:center">Revenue Growth Strategies</h2>
+            <section class="grid-container">
+                <p class="grid-item"> After releasing in he beginning of Summer, our game <a href="https://playvalorant.com/en-us/">VALORANT</a> has grew into a daily playercount of 1+ million players. Although this is incredible growth, we must brainstorm strategies to cotinue
+                    growing our game and playerbase.
                 </p>
-                <details>
-                    <summary>Growth Strategies</summary>
-                    <ul>
-                        <li>Pay for TV commercials to promote our game.</li>
-                        <li>Pay for Twitch.tv commercials.</li>
-                        <li>Release a new VALORANT map.</li>
-                        <li>Release a new VALORANT agent.</li>
-                        <li>Release new VALORANT skins.</li>
-                    </ul>
-                    <form action="#">
-                        <label for="strategies">Choose a strategy:</label>
-                        <select name="strategies" id="strategies">
-                      <option value="tv_commercials">Pay for TV commercials to promote our game.</option>
-                      <option value="ttv_commercials">Pay for Twitch.tv commercials.</option>
-                      <option value="release_map">Release a new VALORANT map.</option>
-                      <option value="release_agent">Release a new VALORANT agent.</option>
-                      <option value="release_skins">Release new VALORANT skins.</option>
-                    </select>
-                        <br><br>
-                        <input type="submit" value="Submit">
-                    </form>
+                <p class="grid-item1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A accusamus minus assumenda itaque aspernatur beatae aut eos. Reprehenderit, praesentium excepturi perferendis facere dolorum quae necessitatibus cumque beatae, nobis blanditiis
+                    laudantium.
+                </p>
+                <p class="grid-item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa, velit eaque dolor odit optio vitae? Porro, tenetur totam est magnam quo, dignissimos praesentium ipsam dolorem molestiae impedit id vero voluptas numquam dolore
+                    ab cumque quibusdam, eum mollitia quaerat tempore fugit aut maxime voluptatibus eveniet? Libero, quod. Ab, assumenda vero.</p>
+                <p class="grid-item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa, velit eaque dolor odit optio vitae? Porro, tenetur totam est magnam quo, dignissimos praesentium ipsam dolorem molestiae impedit id vero voluptas numquam dolore
+                    ab cumque quibusdam, eum mollitia quaerat tempore fugit aut maxime voluptatibus eveniet? Libero, quod. Ab, assumenda vero.</p>
+                <p class="grid-item4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa, velit eaque dolor odit optio vitae? Porro, tenetur totam est magnam quo, dignissimos praesentium ipsam dolorem molestiae impedit id vero voluptas numquam dolore
+                    ab cumque quibusdam, eum mollitia quaerat tempore fugit aut maxime voluptatibus eveniet? Libero, quod. Ab, assumenda vero.</p>
+                <p class="grid-item5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa, velit eaque dolor odit optio vitae? Porro, tenetur totam est magnam quo, dignissimos praesentium ipsam dolorem molestiae impedit id vero voluptas numquam dolore
+                    ab cumque quibusdam, eum mollitia quaerat tempore fugit aut maxime voluptatibus eveniet? Libero, quod. Ab, assumenda vero.</p>
 
-                </details>
             </section>
+            <details>
+                <summary class="clickable">Growth Strategies</summary>
+                <ul>
+                    <li>Pay for TV commercials to promote our game.</li>
+                    <li>Pay for Twitch.tv commercials.</li>
+                    <li>Release a new VALORANT map.</li>
+                    <li>Release a new VALORANT agent.</li>
+                    <li>Release new VALORANT skins.</li>
+                </ul>
+                <form action="#">
+                    <label for="strategies">Choose a strategy:</label>
+                    <select name="strategies" id="strategies">
+                  <option value="tv_commercials">Pay for TV commercials to promote our game.</option>
+                  <option value="ttv_commercials">Pay for Twitch.tv commercials.</option>
+                  <option value="release_map">Release a new VALORANT map.</option>
+                  <option value="release_agent">Release a new VALORANT agent.</option>
+                  <option value="release_skins">Release new VALORANT skins.</option>
+                </select>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+
+            </details>
+
         </main>
         <section>
             <h2>Design Strategy</h2>
@@ -85,8 +108,8 @@
             <audio controls>
                 <source src="audio/JNATHYN_Rise.mp3" type="audio/mpeg">
               </audio>
-            <p>Click the play button</p>
-            <p><em>Track: JNATHYN - Rise [NCS10 Release]
+            <p class="clickable">Click the play button</p>
+            <p id="credit"><em>Track: JNATHYN - Rise [NCS10 Release]
                 Music provided by NoCopyrightSounds.
                 Watch: https://youtu.be/2TGVPj4YVfk
                 Free Download / Stream: https://ncs.io/JRise
